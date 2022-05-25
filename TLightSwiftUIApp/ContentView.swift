@@ -29,7 +29,7 @@ extension ContentView {
   var body: some View {
     ZStack {
       Color(.black)
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
       VStack(spacing: 20) {
         ColorCircle(color: .red, opacity: currentLight == .red ? 1 : 0.3)
         ColorCircle(color: .yellow, opacity: currentLight == .yellow ? 1 : 0.3)
